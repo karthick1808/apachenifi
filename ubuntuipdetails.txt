@@ -1,0 +1,16 @@
+52.66.176.22
+15.206.147.43
+13.127.143.108
+13.127.211.107
+13.233.126.237
+13.233.137.148
+13.233.136.220
+13.232.210.202
+13.233.152.52
+
+1 . download ip file from github
+2. extract zip file
+3. open powershell
+4. go to the extracted location
+5. ssh -i ./nifi.pem ubuntu@52.66.176.22
+6. yes
