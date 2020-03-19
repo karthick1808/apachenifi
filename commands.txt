@@ -1,0 +1,54 @@
+    1  apt-get update -y
+    2  apt-get install openjdk-8-jdk -y
+    3  update-alternatives --config java
+    4  vi /etc/profile.d/java.sh
+    5  cat /etc/profile.d/java.sh
+    6  reboot now
+    7  vi /etc/profile.d/java.sh
+    8  reboot now
+    9  clear
+   10  env | grep JAVA_HOME
+   11  java --version
+   12  java -version
+   13  history
+   14  history > javainstall.txt
+   15  cat javainstall.txt
+   16  clear
+   17  wget http://apachemirror.wuchna.com/nifi/1.11.3/nifi-1.11.3-bin.tar.gz
+   18  ls
+   19  tar -xvzf nifi-1.11.3-bin.tar.gz
+   20  ls
+   21  mv nifi-1.11.3/ /opt/
+   22  cd /opt/
+   23  ls
+   24  ls -la
+   25  ln -s nifi-1.11.3/ nifi/
+   26  ln -s nifi-1.11.3/ nifi
+   27  ls -la
+   28  cd
+   29  pwd
+   30  cd /opt/nifi
+   31  pwd
+   32  ls -la
+   33  clear
+   34  free -h
+   35  df -h
+   36  rm -rvf /root/nifi-1.11.3-bin.tar.gz
+   37  df -h
+   38  clear
+   39  ls -la
+   40  bin/nifi.sh start
+   41  bin/nifi.sh status
+   42  ps aux | grep 1409
+   43  bin/nifi.sh install
+   44  /etc/init.d/nifi start
+   45  /etc/init.d/nifi restart
+   46  systemctl status nifi
+   47  /etc/init.d/nifi
+   48  /etc/init.d/nifi status
+   49  history
+   50  history > nifiinstall.txt
+   51  free -h
+   52  df -h
+   53  top
+   54  history
