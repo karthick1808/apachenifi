@@ -1,0 +1,103 @@
+* With in the data flow flow industry there are about huge
+amount of requirements right from proessing of few bytes 
+of data to pb xb data, processing variety of datas like
+- json
+- xml
+- parquet
+- txt
+- audio
+- video
+* Being Apache nifi as an next generation data flow tool it 
+supports variety of data processing and as of now 1.11 
+version nearly anout 284 processprs it will support
+
+*Depends upon the requirements it can be categorized by
+- Data Ingestion
+- Routing and Mediation
+- Database Access
+- Attribute Extraction
+- System Integeration
+- Data Transformation
+- sending data
+- HTTP
+- AWS
+Data Ingestion
+where it can read and write  the data
+- local
+- cloud
+- bigdata 
+- kafka
+examples:
+getfile, gethttp, getftp, getkafka, gethdfs, gethbase
+
+Database access:
+What kind of database it can access
+Structured/unstructure
+what kind of drivers it can use
+what kind of operations we can do
+- sql
+- CRUD (insert,update, read, delete)
+while extracting the data, along with data(original) we will
+get metadata also
+- handle the data along with attribute
+
+Attribute:
+- Along with the data we will have n number of attributes
+- Attributes can be updated/ new attributes can be added 
+or we can truncate the attribute/ extract the attribute
+ex: update attribute, extract text attribute to json, attribute 
+to csv
+
+System integration:
+Wen can make the processors to interact with native 
+operating systemscripts ot any other process and those
+are categorized unser system integration
+Examples
+Executescript, Execute groovy, executeprocess, 
+executestreamcommand
+
+Data Transformation:
+Processors that belong to data transformationn are capable of
+altering are replace, transform, slicing the data of flow file content
+example 
+structures to unstructured data
+send a flow file as an http body to invoke http processor
+ex Replacetext,JolttransformJSON
+
+Routing and mediation
+Route the objects to next level of processing i.e what the flow file
+needs to be done on next step
+it can take the decisions based on attributes
+once the processing is done it can send the object as input
+to next processor
+EX
+Routeonattribute, routeoncontent, Control rate, 
+routetext
+
+Sendingdata:
+We can send the objects to other filesystem, other location, remote system
+ cloud, and messaging system
+examples:
+putemail, putkafka, putsftp, putfile,
+putftp
+
+HTTP Processors:
+it can interact with http protocol systems like restapi,soapapi
+- it can invoke the request as well as respond to the request
+across http request to othersystem
+ex 
+invokehttp, posthttp, listen http
+
+AWS 
+these kind of processors are responsible for interact with
+Amazon cloud services 
+getsqs, putsns, puts3object, fetchs3object
+
+Splitting and aggregation:
+these processors are used to split and merge the content present in floe file
+some of the processor that belong to this category
+- SplitText
+- SplitJson
+- SplitXml
+- MergeContent
+- Splitcontent
