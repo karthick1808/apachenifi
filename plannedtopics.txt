@@ -1,0 +1,24 @@
+Nifi Pending Topics
+Monitoring
+Provenance
+Nifi Registry
+Nifi Cluster
+Custom Processor and Custom Controller
+Nifi External Integration Topics
+File Types
+•	AVRO
+•	CSV
+•	JSON
+HTTP Processor
+•	Get
+•	Put
+•	Fetch
+•	Listen
+Database(mysql)
+•	Integration
+•	Incremental Fetch
+Splunk
+Apache Solr
+Elastic Search
+AWS Cloud
+Mango DB(Nosql)
