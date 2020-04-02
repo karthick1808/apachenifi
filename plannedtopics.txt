@@ -5,6 +5,12 @@ Nifi Registry
 Nifi Cluster
 Custom Processor and Custom Controller
 Nifi External Integration Topics
+Apache Kafka
+• Setup Standalone + cluster
+• Consumer
+• Producer
+• Tunning
+• Integration
 File Types
 •	AVRO
 •	CSV
