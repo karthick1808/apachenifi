@@ -1,0 +1,18 @@
+    1  apt-get update -y
+    2  apt-get install openjdk-8-jdk -y
+    3  wget https://downloads.apache.org/kafka/2.4.1/kafka_2.12-2.4.1.tgz
+    4  tar -xvzf kafka_2.12-2.4.1.tgz 
+    5  mv kafka_2.12-2.4.1/ /opt
+    6  ln -s /opt/kafka_2.12-2.4.1/ /opt/kafka
+    7  vi /etc/profile.d/java.sh
+    8  reboot now
+    9  vi /etc/systemd/system/kafka.service
+   10  exit
+   11  mv /home/ubuntu/server.properties /opt/kafka/config/server.properties
+   12  systemctl status kafka.service 
+   13  systemctl start kafka.service 
+   14  systemctl status kafka.service 
+   15  systemctl enable kafka.service 
+   16  reboot now
+   17  history 
+   18  history > /home/ubuntu/broker.txt
