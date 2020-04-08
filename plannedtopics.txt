@@ -28,3 +28,6 @@ Apache Solr
 Elastic Search
 AWS Cloud
 Mango DB(Nosql)
+HDFS integration
+Hive integration
+Ambari integration
